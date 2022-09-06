@@ -1,0 +1,23 @@
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.mainSection{
+    height: 330px;
+    width: 980px;
+    margin: 0 auto;
+    
+
+    &__picture{
+
+        &__img{
+            width: 505px;
+            height: 330px;
+        }
+    }
+    &__text{
+        width: 380px;
+        height: 250px;   
+    }
+}
