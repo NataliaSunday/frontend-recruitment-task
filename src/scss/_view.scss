@@ -1,23 +1,23 @@
 .container{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 90rem; //1440px
 }
 
 .mainSection{
-    height: 330px;
-    width: 980px;
+    height: 20.62rem; //330px
+    width: 61.25rem; //980px
     margin: 0 auto;
     
 
     &__picture{
 
         &__img{
-            width: 505px;
-            height: 330px;
+            width: 31.56rem; //505px
+            height: 20.62rem; //330px
         }
     }
     &__text{
-        width: 380px;
-        height: 250px;   
+        width: 23.75rem;//380px
+        height: 15.62rem; //250px
     }
 }
