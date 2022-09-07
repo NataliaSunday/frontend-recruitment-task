@@ -30,3 +30,11 @@
     margin-top: 5.93rem; //95px
 }
 
+@media screen and (max-width: 710px){
+    .heading{
+        color: rgb(26, 83, 92);
+    }
+    .paragraph{
+        color: rgb(2, 41, 44);
+    }
+}
