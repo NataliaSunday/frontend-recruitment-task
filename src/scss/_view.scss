@@ -19,3 +19,46 @@
         height: 15.62rem; //250px
     }
 }
+
+@media screen and (max-width: 694px) and (orientation: landscape){
+    .container{
+        margin: 0;
+    }
+    .mainSection{
+        margin: 0;
+        width: 100vw; //980px
+        height: 100vh;
+        position: relative;
+        &__picture{
+            &__img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                width: 100vw; //505px
+                height:100%; //330px
+            }
+        }
+        &__text{
+            width: auto;//380px
+            height: 17.62rem; //250px
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(238, 230, 225, 0.5);
+            box-shadow: .1rem .1rem .25rem rgba(228, 193, 174,.25);
+            padding: 1rem;
+        }
+    }
+    .heading{
+        color: rgb(26, 83, 92);
+    }
+    .paragraph{
+        color: rgb(2, 41, 44);
+    }
+}
