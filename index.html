@@ -37,16 +37,19 @@
                 <button class="btn" id="popupBtn">Button</button>
             </section>
         </section>
-        <div class="popupContainer d-flex-center">
+        <div class="popupContainer d-flex-center" id="popupContainer">
            <div class="popupContainer__box">
-                <svg id="close" class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="closeBtn" class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div class="popupContainer__box__content d-flex-col">
                     <h1 class="heading">Alert!</h1>
-                    <p class="paragraph">You have clicked X times to related button.</p>
+                    <p class="paragraph">You have clicked <span id="counter"></span> times to related button.</p>
                 </div>
+                <button class="btn resetBtn" id="resetBtn">reset</button>
             </div>
         </div>
+    <script src="src/js/main.js"></script>
 </body>
+
