@@ -1,36 +1,37 @@
-let openBtn = document.getElementById('popupBtn');
-let closeBtn = document.getElementById('closeBtn');
 let popupContainer = document.getElementById('popupContainer');
+let openBtn = document.getElementById('popupBtn');
 let counterInfo = document.getElementById('counter');
 let resetBtn = document.getElementById('resetBtn');
+let closeBtn = document.getElementById('closeBtn');
 
-console.log(localStorage.getItem('counter'));
+window.addEventListener('click', outsideClick);
+openBtn.addEventListener('click', openPopup);
+resetBtn.addEventListener('click', resetCounter);
+closeBtn.addEventListener('click', closePopup);
 
-
-openBtn.addEventListener('click', ()=>{
-
+function openPopup(){
     localStorage.setItem('counter',parseInt(localStorage.getItem('counter')) + 1);
-    counterInfo.innerText = JSON.stringify(localStorage.getItem('counter'));
+    updatePopupContent();
     popupContainer.style.display = "flex";
-if( parseInt(localStorage.getItem('counter')) > 5){
-    resetBtn.style.display="block"
-}else{
-    resetBtn.style.display="none"
-}
-if(popupContainer.style.display = "flex"){
-    popupContainer.addEventListener('click', ()=>{
-        popupContainer.style.display = "none";
-    })
-}
-
-});
-closeBtn.addEventListener('click', ()=>{
-    popupContainer.style.display = "none";
     
-});
-
-
-resetBtn.addEventListener('click', ()=>{
-    localStorage.setItem('counter', '0')
-})
-
+    if(parseInt(localStorage.getItem('counter')) > 5){
+        resetBtn.style.display="block"
+    }else{
+        resetBtn.style.display="none"
+    }
+}
+function closePopup(){
+    popupContainer.style.display = "none"
+}
+function resetCounter(){
+    localStorage.setItem('counter', '0');
+    updatePopupContent();
+}
+function outsideClick(e){
+    if(e.target == popupContainer){
+        popupContainer.style.display = "none";
+    }
+}
+function updatePopupContent(){
+    counterInfo.innerText = JSON.stringify(localStorage.getItem('counter'));
+}
