@@ -9,7 +9,6 @@
     height: 100vh;
     background-color: rgba(18,18,18,.5);//#121212;
    
-   
     &__box{
         width: 57.5rem;//920px
         height: 13.125rem;//210px +12
@@ -22,15 +21,4 @@
             padding-left: 5.93rem; //95px;          
         }
     }
-}
-
-.close{
-    cursor: pointer;
-    position: absolute;
-    right: 2.875rem; //46px
-    top:  2.875rem; //46px
-}
-
-.resetBtn{
-    display: none;
 }

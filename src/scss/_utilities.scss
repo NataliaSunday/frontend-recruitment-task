@@ -3,8 +3,7 @@
     flex-direction: row;
     gap: 5.93em; //95px
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .d-flex-col{
     display: flex;
@@ -13,7 +12,6 @@
 }
 .d-flex-center{
     display: flex;
-   
     justify-content: center;
     align-items: center;
 }
@@ -25,10 +23,9 @@
 }
 @media screen and (max-width: 800px){
     .d-flex-row{
-         gap: 4.5rem;
+        gap: 4.5rem;
      }
  }
- 
  @media screen and (max-width: 783px) and (orientation: landscape){
     .d-flex-row{
         gap: 3rem;

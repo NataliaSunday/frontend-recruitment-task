@@ -33,3 +33,4 @@ closeBtn.addEventListener('click', ()=>{
 resetBtn.addEventListener('click', ()=>{
     localStorage.setItem('counter', '0')
 })
+
